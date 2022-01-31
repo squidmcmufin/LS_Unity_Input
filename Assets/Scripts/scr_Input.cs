@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scr_Input : MonoBehaviour
+public class scr_Input : MonoBehaviour
 {
     private float movespeed = 4.0f;
 
