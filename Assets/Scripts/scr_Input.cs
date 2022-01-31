@@ -26,9 +26,9 @@ public class Scr_Input : MonoBehaviour
         PreviousPosition = transform.position;
 
 
-        float horizontalInput = Input.GetAxis("Horizontal");
+        float horizontalInput = Input.GetAxis("Horizontal") + Input.GetAxis("Horizontal_Keyboard");
         
-        float verticalInput = -Input.GetAxis("Vertical");
+        float verticalInput = (-Input.GetAxis("Vertical")) + (- Input.GetAxis("Vertical_Keyboard"));
 
        
 
