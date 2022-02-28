@@ -17,18 +17,20 @@ public class scr_Input : MonoBehaviour
 
     private bool jumping = false;
 
-    private float jumptime = 1.0f;
+    public float jumptime = 1.0f;
     private float jumptime_current = 0.0f;
 
     public Rigidbody rb;
 
-    public Vector3 jump;
+    private Vector3 jump;
 
     private Vector3 jump_current;
-    private float jumpforce = 0.5f;
-    private float gravityforce = 0.6f;
-    private float gravitycurrent = 0f;
+    public float jumpforce = 0.5f;
+    public float gravityforce = 0.6f;
+    private float  gravitycurrent = 0f;
     public GameObject standingonground;
+    public float jump_accleration = 0.05f;
+
     void Start()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -77,7 +79,10 @@ public class scr_Input : MonoBehaviour
         {
             if (jump_current.y < jumpforce)
             {
-                    jump_current.y += 0.05f;
+                jump_current.y += jump_accleration;
+
+                
+
             }
             else
             {
@@ -104,7 +109,6 @@ public class scr_Input : MonoBehaviour
 
 
 
-
     void OnCollisionStay(Collision collision)
     {
         grounded = true;
@@ -126,5 +130,16 @@ public class scr_Input : MonoBehaviour
 
         }
     }
-    
+    private void OnTriggerExit(Collider other)
+    {
+        if(standingonground == other.gameObject)
+        {
+
+            grounded = false;    
+
+        }
+        
+        
+    }
+
 }
