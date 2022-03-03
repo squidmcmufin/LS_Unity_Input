@@ -1680,3 +1680,27 @@ Received Import Request.
 Start importing Assets/SkySeries Freebie/FreebieHdri/SkyhighFluffycloudField4k.hdr using Guid(18a0be10f0f64ac4c9f679d68e2cf857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a793f1b7e206da15f2fa02258d3434') in 0.095974 seconds 
   Import took 0.103910 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 2782.481867 seconds.
+  path: Assets/metearials/New Material 2.mat
+  artifactKey: Guid(6f7c56357d1bd1245a5c9e52b352bf38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/metearials/New Material 2.mat using Guid(6f7c56357d1bd1245a5c9e52b352bf38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '897a08c8d5bd5ae65c26eaccc888dc88') in 0.068060 seconds 
+  Import took 0.136629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000470 seconds.
+  path: Assets/metearials/New Material.mat
+  artifactKey: Guid(16d4ce0114c87834c9992197520f8b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/metearials/New Material.mat using Guid(16d4ce0114c87834c9992197520f8b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dca284511bbbff6039807d81f5273f5') in 0.058484 seconds 
+  Import took 0.063012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000392 seconds.
+  path: Assets/metearials/New Material 4.mat
+  artifactKey: Guid(1d8f0a2974736ce458634580d3a0a4bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/metearials/New Material 4.mat using Guid(1d8f0a2974736ce458634580d3a0a4bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ecb7221461e6770c28d523c02247d2e') in 0.047178 seconds 
+  Import took 0.053985 seconds .
+
