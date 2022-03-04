@@ -30,7 +30,7 @@ public class scr_Input : MonoBehaviour
     private float  gravitycurrent = 0f;
     public GameObject standingonground;
     public float jump_accleration = 0.05f;
-
+    public bool collected = false;
    
     //public float thrust = 1.0f;
     
@@ -149,10 +149,27 @@ public class scr_Input : MonoBehaviour
         if (transform.position.y > other.gameObject.transform.position.y)
         {
 
-            grounded = true;
-            //transform.Translate(0.00f, 0.5f, 0.00f);
-            standingonground = other.gameObject;
+            
 
+            if (other.gameObject.tag == "collectable")
+            {
+                Destroy(other.gameObject);
+                collected = true;
+
+                other.gameObject.tag = goal;
+                if("collectable" = true)
+                {
+                   
+
+
+                }
+            }
+            else 
+            {
+                grounded = true;
+                //transform.Translate(0.00f, 0.5f, 0.00f);
+                standingonground = other.gameObject;
+            }
             //BoxCollider Boxbounding = (BoxCollider)other;
 
         }

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Wall
   - CubeFloor
+  - collectable
+  - goal
   layers:
   - Default
   - TransparentFX
