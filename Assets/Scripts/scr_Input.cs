@@ -35,7 +35,7 @@ public class scr_Input : MonoBehaviour
     //public float thrust = 1.0f;
     
 
-    void Start()
+    void Start() 
     {
         float horizontalInput = Input.GetAxis("Horizontal");
 
@@ -136,10 +136,10 @@ public class scr_Input : MonoBehaviour
     
 
 
-    void OnCollisionStay(Collision collision)
+   /* void OnCollisionStay(Collision collision)
     {
         grounded = true;
-    }
+    }*/
 
     private void OnTriggerEnter(Collider other)
     {
@@ -150,7 +150,7 @@ public class scr_Input : MonoBehaviour
         {
 
             grounded = true;
-            transform.Translate(0.00f, 0.5f, 0.00f);
+            //transform.Translate(0.00f, 0.5f, 0.00f);
             standingonground = other.gameObject;
 
             //BoxCollider Boxbounding = (BoxCollider)other;
