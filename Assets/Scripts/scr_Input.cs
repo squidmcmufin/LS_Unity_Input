@@ -156,8 +156,9 @@ public class scr_Input : MonoBehaviour
                 Destroy(other.gameObject);
                 collected = true;
 
-                other.gameObject.tag = goal;
-                if("collectable" = true)
+               // other.gameObject.tag = goal;
+                
+               // if(collectable = true)
                 {
                    
 
